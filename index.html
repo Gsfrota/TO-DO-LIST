@@ -8,19 +8,34 @@
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
+   <header>
+    <p>Home</p>
+    <img src="/assets/img/perfil-default.png" alt="perfil">
+   </header>
     <div id="main-container">
         <h1>To-Do List</h1>
 
         <div id="input-container">
-            <input id="tarefa" placeholder="Digite uma tarefa" onkeyup="inputTask()">
-            <button onclick="evento()" value="btn" type="button">Adicionar</button>
+            <input id="tarefa" placeholder="Digite uma tarefa" onkeyup="inputTask()" name="Tarefa">
+            <button onclick="evento()" value="Tarefa" type="button">Adicionar</button>
         </div>
-
+       
         <section id="list">
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <label for="checkbox1">Tarefa</label>
+            <div class="checklist">
+                <input type="checkbox" class="checkbox">
+                <label for="" class="label">tarefa</label>
+
+            </div>
         </section>
+       
     </div>
+
+<footer>
+    <p>
+        Made by: Guilherme Frota Souza
+    </p>
+</footer>
+
     <script src="/assets/index.js"></script>
 </body>
 </html>

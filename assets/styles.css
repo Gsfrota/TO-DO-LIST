@@ -4,21 +4,42 @@
     padding:0;
     margin:0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
    
 }
 body{
-    background-color: rgba(62, 14, 138, 0.801);
+    background-color:aliceblue;
+    overflow: auto;
+    position: relative;
+}
+header{
+    background-color: rgba(4, 3, 75, 0.842);
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+header img{
+    height: 38px;
+    border-radius: 50%;
+    margin-left: 600px; 
 }
 #main-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    
     align-items: center;
     margin: 0 auto;
     
-    
+   
+}
+#input-container{
+    display: flex;
+    justify-content: center;
 }
 #main-container h1{
     padding:30px;
@@ -29,6 +50,50 @@ body{
     margin-bottom: 30px;
 }
 #list{
+    display: inline-block;
+    height: 300px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+label{
+    display: inline-block;
+    line-height: 20px;
+}
+.checklist{
+    width: 300px;
+    margin-bottom:10px;
+    align-items: center;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
     
-    margin-right:133.3px;
+}
+#tarefa{
+    width: 300px;
+    height: 30px;
+}
+
+.checkbox{
+   
+  
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+}
+
+footer{
+    background-color: rgba(4, 3, 75, 0.842);
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
